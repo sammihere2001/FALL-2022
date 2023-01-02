@@ -10,34 +10,27 @@ namespace saim1
     {
         static void Main(string[] args)
         {
-            //PROBLEM 3
+          
 
-            Console.WriteLine("Enter Gender M : Male or F :Female  ");
-            string n = Console.ReadLine();
-            Console.WriteLine("Enter Age ");
-            int a = Convert.ToInt32(Console.ReadLine());
+           
+            //PROBLEM 2
 
-            if (n == "M" && a >= 18)
-            {
-                Console.WriteLine("You are an Adult");
+            Console.WriteLine("Enter Number ");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            if (n == 0 || n < 0) {
+                Console.WriteLine("Invalid Input");
             }
-            else if (n == "F" && a >= 16)
+            else if ( n %2 == 0)
             {
-                Console.WriteLine("You are an Adult");
+                Console.WriteLine(n +" is an Even number");
             }
-            else if (n == "F" && a < 16)
+            else if (n % 2 != 0)
             {
-                Console.WriteLine("You are a Minor");
+                Console.WriteLine(n + " is an Odd number");
             }
-            else if (n == "M" && a < 18)
-            {
-                Console.WriteLine("You are a Minor");
-            }
-            else
-            {
-                Console.WriteLine("Invalid input");
-            }
-            Console.ReadLine();
+            Console.ReadKey();
+
 
 
 
